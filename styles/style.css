@@ -1,0 +1,55 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+    body{
+        width: 1440px;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+        /* background-color: teal; */
+    }
+   
+    .nav-img ,
+    .nav-contant,
+    nav
+    {
+        display: flex;
+    }
+    nav{
+        background-color: #FFF;
+        justify-content: space-around;
+    }
+    .title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .nav-img img{
+        width: 60px;
+        border-radius: 50%;
+        padding-right: 10px;
+
+    }
+    .aqua{
+        color: aqua;
+    }
+    ul li{
+        list-style: none;
+        padding: 20px;
+        font-weight: 500;
+        
+    }
+    ul li:hover{
+        border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+    }
+    .list-icon i{
+        padding-left: 10px;
+       
+    }
+    
+    .fa-youtube{
+        color: red;
+    }
+    .fa-tiktok{
+        color: #0f0246;
+       
+        
+    }
