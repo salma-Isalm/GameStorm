@@ -28,6 +28,8 @@
     .title{
         font-size: 2.3rem;
         font-weight: 700;
+        color: #0f0246;
+        text-transform: uppercase;
     }
     .nav-img img{
         width: 50px;
@@ -36,9 +38,12 @@
 
     }
     .aqua{
-        background: linear-gradient(180deg, #0f0246 29%, tomato 71%);
+        background: linear-gradient(180deg, #0f0246 19%, tomato 81%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .tomato{
+        color: tomato;
     }
     ul li{
         list-style: none;
@@ -179,6 +184,112 @@ font-size: 1.2rem;
 font-weight: 700;
 
   }
+
+  /* online game styles */
+  .online-game , .container{
+    padding: 50px 100px;
+  }
+  .online-container{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+}
+  .online-title{
+    color: #0B0223;
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+    .online-driscript{
+        color: #534C64;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+  
+    .card-parent{
+        position: relative;
+        cursor: pointer;
+    }
+    .card-parent img{
+        width: 100%;
+    }
+    .card-child{
+
+        border-radius: 10px;
+        border: 4px solid  #FF42A5;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+        width: 100%;
+        height: 98%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .card-parent:hover .card-child{
+        display:block;
+    }
+    .card-driscript{
+        color: #534C64;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .fa-regular{
+        font-weight: 400;
+    }
+    .hover-play{
+        position: absolute;
+        font-size: 1.6rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+
+    }
+    .hover-text{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.35rem;
+        color: tomato;
+    }
+    /* play instantly section style*/
+    .play-container{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 170px;
+        text-align: center;
+    }
+    .game-contant ,.play-child img{
+        width: 50%;
+    }
+    .game-text{
+        text-align: right;
+    }
+    .play-parant-contant{
+        width: 50%;
+        position: relative;
+    }
+    .play-parant-contant img{
+        width: 100%;
+    }
+    .play-child{
+        position: absolute;
+        bottom: -10%;
+        left: -15%;
+    }
+    .play-title{
+        color: #0f0246;
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
   
     @media screen and (max-width:576px) {
         nav{
@@ -193,7 +304,7 @@ font-weight: 700;
             width: 100%;
 
         }
-        nav , .nav-contant {
+        nav , .nav-contant ,.play-container{
            
             flex-direction: column;
         }
@@ -230,13 +341,13 @@ font-weight: 700;
             font-size: 10px;
         }
         /* gamer section styles */
-        .gamer{
+        .gamer, .container{
             padding: 30px;
         }
         .gamer-container{
             flex-direction: column;
         }
-        .game-left , .game-right{
+        .game-left , .game-right ,.game-contant, .play-parant-contant{
             width: 100%;
             text-align: center;
           }
@@ -244,12 +355,40 @@ font-weight: 700;
             font-size: 1rem;
             text-align: center;
           }
+          .card-container{
+            grid-template-columns: repeat(1 , 1fr);
+          }
+          .online-game{
+            padding: 30px;
+          }
+          .online-title{
+
+            font-size: 2.4rem;
+           
+          }
+          .play-title{
+            font-size: 2rem;
+        }
+        .play-parant-contant img {
+            width: 100%;
+        }
+        .play-child img{
+            width: 50%;
+        }
+        .play-child{
+            position: absolute;
+            bottom: -10%;
+            left: -33%;
+        }
+        .play-title{
+            text-align: center;
+        }
     }
     @media screen and (min-width:576px) and (max-width:992px) {
         main{
             width: 100%;
         }
-        .banner , .nav-contant,.gamer-container{
+        .banner , .nav-contant,.gamer-container,.play-container{
             flex-direction: column;
             
         }
@@ -268,5 +407,35 @@ font-weight: 700;
             font-size: 1.26rem;
             text-align: center;
           }
+          .card-container{
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .online-game{
+            padding: 10px;
+          }
+          .online-title{
+             font-size: 2.4rem; 
+          }
+          .play-parant-contant img {
+            width: 100%;
+        }
+        .play-child img{
+            width: 50%;
+        }
+        .play-child{
+            position: absolute;
+            bottom: -10%;
+            left: -20%;
+        }
+        .play-container{
+            gap: 60px;
+        }
+        .game-contant, .play-parant-contant{
+            width: 100%;
+            
+        }
+        .play-title{
+            text-align: center;
+        }
 
     }
