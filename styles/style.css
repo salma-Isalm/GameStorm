@@ -53,7 +53,7 @@
         cursor:grabbing;
         
     }
-    ul li:hover{
+    .nav-contant li:hover{
         border-radius: 8px;
         background: rgba(11, 2, 35, 0.10);
         padding: 15px 20px;
@@ -94,7 +94,18 @@
         margin-top: 10px;
         margin-left: 10px; 
     }
-    main{
+    .btn-career{
+        border-radius: 48px;
+        border: none;
+        font-size: 0.9rem;
+        padding: 15px 40px;
+        color: tomato;
+        font-weight: 600;
+        background:#fff;
+        cursor: pointer;
+        margin-left: 10px; 
+    }
+   .fixd-width{
         width: 1440px;
         margin: 0 auto;    }
     /* banner styles */
@@ -260,36 +271,77 @@ font-weight: 700;
         color: tomato;
     }
     /* play instantly section style*/
-    .play-container{
+    .play-container, .anywhare-container{
         display: flex;
         /* justify-content: center; */
         align-items: center;
         gap: 170px;
         text-align: center;
     }
-    .game-contant ,.play-child img{
+    .game-contant ,.play-child img  {
         width: 50%;
     }
     .game-text{
         text-align: right;
     }
-    .play-parant-contant{
+    .play-parant-contant {
         width: 50%;
         position: relative;
     }
-    .play-parant-contant img{
+    .play-parant-contant img , .career-contant img{
         width: 100%;
     }
     .play-child{
         position: absolute;
-        bottom: -10%;
+      bottom: -10%;
         left: -15%;
+    }
+    .play-child1{
+        position: absolute;
+      bottom: -10%;
+        right: -15%;
     }
     .play-title{
         color: #0f0246;
         font-size: 2.3rem;
         font-weight: 700;
     }
+    /* career section styles */
+    .career{
+        margin-top: 60px;
+        background: linear-gradient(90deg, rgb(240, 154, 139) 13.54%,  tomato 39.46%);
+        padding-left: 100px;
+    }
+    .career-title{
+        color: #FFF;
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .career-descript{
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .flex-ul ul li{
+        color: #FFF;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .flex-ul{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .career-container{
+        display: flex;
+        align-items: center;
+    }
+    .career-contant {
+        width: 50%;
+    }
+  
   
     @media screen and (max-width:576px) {
         nav{
@@ -300,13 +352,21 @@ font-weight: 700;
             padding: 0;
             margin-right: 0;
         }
-        main{
+        .fixd-width {
             width: 100%;
+            margin: 0 auto;
 
         }
-        nav , .nav-contant ,.play-container{
+        /* .career{
+            width: 100%;
+            margin:  auto;
+        } */
+        nav , .nav-contant ,.play-container , .career-container{
            
             flex-direction: column;
+        }
+        .anywhare-container{
+            flex-direction: column-reverse;
         }
         .nav-img , .nav-contant{
             margin: 0;
@@ -347,9 +407,12 @@ font-weight: 700;
         .gamer-container{
             flex-direction: column;
         }
-        .game-left , .game-right ,.game-contant, .play-parant-contant{
+        .game-left , .game-right ,.game-contant{
             width: 100%;
             text-align: center;
+          }
+          .play-parant-contant {
+            width: 50%;
           }
           .game-discript{
             font-size: 1rem;
@@ -372,27 +435,55 @@ font-weight: 700;
         .play-parant-contant img {
             width: 100%;
         }
-        .play-child img{
+        .play-child img ,.play-child1 img{
             width: 50%;
         }
         .play-child{
             position: absolute;
+            bottom: -20%;
+            left: -40%;
+        }
+        .play-child1{
+            position: absolute;
             bottom: -10%;
-            left: -33%;
+            right: -40%;
         }
         .play-title{
             text-align: center;
         }
+        .career{
+            width: 100%;
+            padding: 50px;
+           
+        }
+        .career-contant ,.career-img{
+            width: 100%;
+        }
+        .career-img img{
+            width: 100%;
+        }
+        .career-img{
+            margin-top: 20px;
+        }
+        .career-title{
+            font-size: 2rem;
+        }
+        .career-descript{
+            font-size: 0.9rem;
+        }
     }
     @media screen and (min-width:576px) and (max-width:992px) {
-        main{
+        .fixd-width, header {
             width: 100%;
         }
         .banner , .nav-contant,.gamer-container,.play-container{
             flex-direction: column;
             
         }
-        .banner-left, .banner-right {
+        .anywhare-container{
+            flex-direction: column-reverse;
+        }
+        .banner-left, .banner-right  {
             width: 100%;
         }
         .banner-left img, .banner-right img{
@@ -418,24 +509,52 @@ font-weight: 700;
           }
           .play-parant-contant img {
             width: 100%;
-        }
-        .play-child img{
+         }
+            .play-child img , .play-child1 img{
             width: 50%;
-        }
-        .play-child{
+            }
+            .play-child{
             position: absolute;
             bottom: -10%;
-            left: -20%;
+            left: -15%;
         }
-        .play-container{
+             .play-child1{
+            position: absolute;
+            bottom: -10%;
+            right: -15%;
+        }
+        .play-container , .anywhare-container{
             gap: 60px;
         }
-        .game-contant, .play-parant-contant{
+        .game-contant, .play-parant-contant, .anywhare-contant{
             width: 100%;
             
         }
         .play-title{
             text-align: center;
         }
-
+        .career{
+            width: 100%;
+            padding: 50px;
+        }
+        .career-container{
+            flex-direction: column;
+        }
+        .career{
+            width: 100%;
+            padding: 50px;
+           
+        }
+        .career-contant ,.career-img{
+            width: 100%;
+        }
+        .career-img img{
+            width: 100%;
+        }
+        .career-img{
+            margin-top: 20px;
+        }
+        .career-title{
+            font-size: 2rem;
+        }
     }
