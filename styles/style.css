@@ -198,7 +198,7 @@ font-weight: 700;
 
   /* online game styles */
   .online-game , .container{
-    padding: 50px 100px;
+    padding: 50px 140px;
   }
   .online-container{
     text-align: center;
@@ -473,13 +473,15 @@ font-weight: 700;
         }
     }
     @media screen and (min-width:576px) and (max-width:992px) {
-        .fixd-width, header {
+        .fixd-width {
             width: 100%;
+        
         }
         .banner , .nav-contant,.gamer-container,.play-container{
             flex-direction: column;
             
         }
+      
         .anywhare-container{
             flex-direction: column-reverse;
         }
@@ -534,17 +536,13 @@ font-weight: 700;
             text-align: center;
         }
         .career{
-            width: 100%;
-            padding: 50px;
+           margin: 30 auto;
+            padding: 90px;
         }
         .career-container{
             flex-direction: column;
         }
-        .career{
-            width: 100%;
-            padding: 50px;
-           
-        }
+        
         .career-contant ,.career-img{
             width: 100%;
         }
@@ -556,5 +554,8 @@ font-weight: 700;
         }
         .career-title{
             font-size: 2rem;
+        }
+        .gamer{
+            padding: 30px;
         }
     }
