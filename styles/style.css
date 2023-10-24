@@ -340,6 +340,38 @@ font-weight: 700;
     .career-contant {
         width: 50%;
     }
+    .career-img img{
+        width: 100%;
+    }
+    .catagory{
+        padding: 30px 100px;
+        background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    }
+    .catagory-container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .catagory-item{
+        display: flex;
+        gap: 10px;
+        text-align: left;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50px;
+        border:1.5px solid  #fff;
+        background: #FFF;
+        color: #0B0223;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor:pointer;
+
+        
+    }
+    .catagory-item:hover{
+        border: 1.5px solid  #ff4245;
+    }
   
   
     @media screen and (max-width:576px) {
@@ -456,10 +488,13 @@ font-weight: 700;
         }
         .career{
             width: 100%;
-            padding: 10px;
+            padding-left: 0;
            
         }
-        .career-contant ,.career-img{
+        .career-container{
+            padding: 20px;
+        }
+        .career-contant {
             width: 100%;
         }
         .career-img img{
@@ -474,6 +509,13 @@ font-weight: 700;
         .career-descript{
             font-size: 0.9rem;
         }
+        .catagory{
+            padding: 10px;
+        }
+        .catagory-container{
+            gap: 10px;
+        }
+     
     }
     @media screen and (min-width:576px) and (max-width:992px) {
         body{
@@ -549,12 +591,14 @@ font-weight: 700;
         .play-title{
             text-align: center;
         }
-        .career{
-           margin: 30 auto;
-            padding: 90px;
+
+           .career{
+            width: 100%;
+            padding-left: 0;
         }
         .career-container{
             flex-direction: column;
+            padding: 30px;
         }
         
         .career-contant ,.career-img{
@@ -571,5 +615,11 @@ font-weight: 700;
         }
         .gamer{
             padding: 30px;
+        }
+        .catagory{
+            padding: 10px;
+        }
+        .catagory-container{
+            gap: 10px;
         }
     }
