@@ -5,8 +5,13 @@
         margin: 0;
         padding: 0;
     }
- 
+    body{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+ /* header styles */
     header{
+      
         background: #FFF;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
         padding: 30px 100px;
@@ -105,34 +110,28 @@
         cursor: pointer;
         margin-left: 10px; 
     }
-   .fixd-width{
-        width: 1440px;
-        margin: 0 auto;    }
     /* banner styles */
-    .banner{
+    .banner-container{
         background-color:white;
         display: flex;
-        justify-content: space-between;
+        gap: 20px;
+       
 
-    }
-    .banner-left{
-        width: calc(50% - 20px);
-        position: relative;
     }
     .banner-left img , .banner-right img{
         width: 100%;
         height: 75vh;
         display: block;
     }
-  .banner-right{
-    width: calc(50%  - 20px );
-  }
+    .banner-left  , .banner-right{
+        width: 50%;
+        position: relative;
+    }
     .banner-contant{
-        width: 400px;
+        width: 500px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50% , -50%);
+        top: 30%;
+        left: 30%;
 
     }
     .banner-title1{
@@ -344,26 +343,26 @@ font-weight: 700;
   
   
     @media screen and (max-width:576px) {
-        nav{
-            background-color: #fff;
+        body{
+            width: 100%;
+        }
+        header{
+            background: #FFF;
             box-shadow: none;
-            text-align: center;
-            width: 100%;
-            padding: 0;
-            margin-right: 0;
+            padding: 10px;
+       
         }
-        .fixd-width {
-            width: 100%;
-            margin: 0 auto;
+        nav{
+            justify-content: center;
+            align-items: center;
+        }
 
-        }
-        /* .career{
-            width: 100%;
-            margin:  auto;
-        } */
         nav , .nav-contant ,.play-container , .career-container{
            
             flex-direction: column;
+        }
+        .play-container , .anywhare-container{
+            gap: 70px;
         }
         .anywhare-container{
             flex-direction: column-reverse;
@@ -375,6 +374,10 @@ font-weight: 700;
             margin-bottom: 20px;
         }
         .banner{
+            width: 100%;
+            
+        }
+        .banner-container{
             flex-direction: column-reverse;
         }
         .banner-left , .banner-right{
@@ -402,7 +405,7 @@ font-weight: 700;
         }
         /* gamer section styles */
         .gamer, .container{
-            padding: 30px;
+            padding: 10px;
         }
         .gamer-container{
             flex-direction: column;
@@ -440,20 +443,20 @@ font-weight: 700;
         }
         .play-child{
             position: absolute;
-            bottom: -20%;
-            left: -40%;
+            bottom: -10%;
+            left: -50%;
         }
         .play-child1{
             position: absolute;
-            bottom: -10%;
-            right: -40%;
+            bottom: -30%;
+            right: -50%;
         }
         .play-title{
             text-align: center;
         }
         .career{
             width: 100%;
-            padding: 50px;
+            padding: 10px;
            
         }
         .career-contant ,.career-img{
@@ -473,14 +476,33 @@ font-weight: 700;
         }
     }
     @media screen and (min-width:576px) and (max-width:992px) {
-        .fixd-width {
-            width: 100%;
-        
+        body{
+        width: 100%;
+           
         }
-        .banner , .nav-contant,.gamer-container,.play-container{
+     header{
+        background: #FFF;
+        box-shadow: none;
+        padding: 10px;
+   
+    }
+    nav{
+        justify-content: center;
+    }
+        .banner-container , .gamer-container,.play-container{
             flex-direction: column;
             
         }
+        
+            .banner-contant{
+           
+                position: absolute;
+                top: 2%;
+        
+            }
+            .banner-discript{
+                margin-top: 0;
+            }
       
         .anywhare-container{
             flex-direction: column-reverse;
@@ -489,7 +511,8 @@ font-weight: 700;
             width: 100%;
         }
         .banner-left img, .banner-right img{
-            height: 100vh;
+           
+            width: 100%;
 
         }
         .game-left , .game-right{
@@ -513,18 +536,9 @@ font-weight: 700;
             width: 100%;
          }
             .play-child img , .play-child1 img{
-            width: 50%;
+            width: 100%;
             }
-            .play-child{
-            position: absolute;
-            bottom: -10%;
-            left: -15%;
-        }
-             .play-child1{
-            position: absolute;
-            bottom: -10%;
-            right: -15%;
-        }
+ 
         .play-container , .anywhare-container{
             gap: 60px;
         }
