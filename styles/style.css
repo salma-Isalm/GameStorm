@@ -656,7 +656,7 @@ font-weight: 700;
     nav{
         justify-content: center;
     }
-        .banner-container , .gamer-container,.play-container{
+        .banner-container ,.nav-contant, .gamer-container,.play-container{
             flex-direction: column;
             
         }
