@@ -372,6 +372,105 @@ font-weight: 700;
     .catagory-item:hover{
         border: 1.5px solid  #ff4245;
     }
+   
+    .footer-container{
+        background-color: #0B0223;
+        padding: 30px 100px;
+    }
+    .footer-icon{
+        margin-top: 120px;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+     
+    }
+    .footer-icon img{
+        padding-left: 0;
+    }
+    .footer-icon .title{
+        color: #fff;
+       
+    }
+    .footer-icon .aqua{
+        background: linear-gradient(180deg, #fff 0%, rgb(207, 45, 17) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .paragaraph-1{
+        justify-content: center;
+        display: flex;
+        gap: 60px;
+        color: #FFF;
+        text-align: center;
+        font-size: 1.54rem;
+        font-weight: 600;
+    }
+    .paragaraph-1 p , .paragraph-2 p{
+        margin-top: 60px;
+    }
+    .footer-icons{
+        justify-content: center;
+        display: flex;
+        gap: 40px;
+        color: #FFF;
+        margin-top: 60px;
+    }
+   .fa-brands{
+    font-size: 40px;
+    border-radius: 10px ;
+    }
+    .fa-twitter{
+        background-color: white;
+        color: rgb(23, 181, 243);
+        padding: 10px;
+    }
+    .fa-facebook{
+        background-color: white;
+        color: rgb(0, 132, 255);
+        padding: 10px;
+
+    }
+    .fa-whatsapp{
+        background-color: rgb(53, 183, 53);;
+        color: #fff;
+        padding: 10px;
+
+    }
+    .fa-linkedin{
+        background-color: rgb(6, 97, 187);
+        color: #fff;
+        padding: 10px;
+
+    }
+    .fa-instagram{
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        color: #fff;
+        padding: 10px;
+
+    }
+    .fa-apple{
+        background-color: #fff;
+        color: black;
+        padding: 10px;
+
+    }
+    .paragraph-2{
+        justify-content: center;
+        display: flex;
+        gap: 40px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.60);
+
+    }
+    .footer-p{
+        color: #fff;
+        color: rgba(255, 255, 255, 0.60);
+        text-align: center;
+        font-size: 1.50rem;
+        font-weight: 500;
+        margin-top: 30px;
+    }
   
   
     @media screen and (max-width:576px) {
@@ -513,8 +612,34 @@ font-weight: 700;
             padding: 10px;
         }
         .catagory-container{
-            gap: 10px;
+            gap: 20px;
         }
+        .footer-container{
+            padding: 30px;
+        }
+        .footer-icon{
+            margin-top: 20px;
+           
+         
+        }
+        .paragaraph-1 , .paragraph-2, .footer-icons{
+            flex-wrap: wrap;
+            gap: 10px;
+       
+        }
+    
+       .fa-brands{
+            text-align: center;
+            font-size: 20px;
+            width: 20px;
+            }
+            .footer-p{
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
      
     }
     @media screen and (min-width:576px) and (max-width:992px) {
@@ -619,7 +744,10 @@ font-weight: 700;
         .catagory{
             padding: 10px;
         }
-        .catagory-container{
-            gap: 10px;
+        .paragaraph-1 , .paragraph-2, .footer-icons{
+            flex-wrap: wrap;
+            gap: 30px;
+       
         }
+     
     }
